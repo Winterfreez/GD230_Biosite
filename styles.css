@@ -1,55 +1,38 @@
+:root {
+  --clr-dark: 26, 42, 104;
+  --clr-light: 203, 120, 73;
+  --clr-highlight: 203, 120, 73;
+
+  --fnt-title: "Merriwether", Georgia, "Times New Roman", Times, serif;
+  --fnt-heading: "Oswald", Verdana, Geneva, Tahoma, sans-serif;
+  --fnt-body: "Merriwether", Georgia, "Times New Roman", Times, serif;
+}
+
 body {
   font-size: 16px;
   margin: 0;
   padding: 0;
 }
+
+/* Typograpphy */
+
 h1 {
-  font-family: "Merriwether", Georgia, "Times New Roman", Times, serif;
+  font-family: var(--fnt-title);
   font-size: 3.052rem;
   font-weight: 700;
-  color: 534a9c;
+  color: rgb(var(--clr-highlight));
   margin: 0;
   padding: 0;
 }
+
 h2 {
-  font-family: "Merriwether", Georgia, "Times New Roman", Times, serif;
+  font-family: var(--fnt-heading);
   font-size: 2.441rem;
   font-weight: 700;
   margin: 0;
   padding: 0;
 }
-p {
-  font-family: "Merriwether", Georgia, "Times New Roman", Times, serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.33em;
-}
-.main-p {
-  width: 80vw;
-}
-figcaption {
-  font-family: "Merriwether", Georgia, "Times New Roman", Times, serif;
-  font-size: 1rem;
-  font-weight: 400;
-  color: rgba(0, 0, 0, 0.5);
-  margin-top: 10px;
-}
-ul {
-  font-family: "Oswald", Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 300;
-  font-size: 1.25rem;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-ol {
-  font-family: "Oswald", Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 300;
-  font-size: 1.25rem;
-  margin: 0;
-  padding: 0;
-  list-style-position: inside;
-}
+
 h3 {
   font-family: "Oswald", Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 500;
@@ -59,85 +42,50 @@ h3 {
   margin: 0;
   padding: 40px 0px 10px;
 }
-.lists {
-  background-color: rgb(79, 137, 166);
-  color: white;
-  padding-right: 40px;
-  padding-left: 40px;
-  padding-bottom: 40px;
-  border-radius: 1em;
+
+p {
+  font-family: var(--fnt-body);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.33em;
 }
-.favorite-link {
-  font-family: "Oswald", Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.25rem;
-  font-weight: 500;
-  text-decoration: none;
+
+.small {
+  font-size: 0.75rem;
+  color: rgb(var(--clr-highlight));
 }
-nav {
-  color: #000000;
-}
-.nav {
-  color: #ffffff;
-  text-decoration: none;
-}
-footer {
-  background-color: rgba(79, 137, 166, 0.3);
-  margin: 0;
-  padding: 40px;
-  clear: both;
-}
-.footer {
-  font-family: "Oswald", Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 300;
-  font-size: 1.25rem;
-}
-header {
-  background-color: rgba(79, 137, 166, 0.3);
-  color: #000000;
-  margin: 0;
-  padding: 40px;
-}
-blockquote {
-  text-align: right;
-}
-.quote {
-  font-family: "Oswald", Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 300;
-  color: #4a969c;
-  font-size: 3rem;
-  padding: 40px;
-}
-.quotee {
-  font-size: 1.25rem;
-  font-weight: 500;
-  color: #333;
-}
+
 a:link {
   text-decoration: none;
-  color: 458a96;
+  color: rbg(var(--clr-highlight));
 }
+
 a:visited {
   text-decoration: none;
-  color: 4f5da6;
+  color: rbg(var(--clr-highlight));
 }
-.photo-1 {
-  border: 10px;
-  border-style: solid;
-  border-color: rgba(83, 74, 156, 0.5);
-  float: left;
+
+/* Images */
+img {
+  width: 10rem;
 }
-.photo-2 {
-  border: 10px;
-  border-style: solid;
-  border-color: rgba(83, 74, 156, 0.5);
-  float: left;
+
+/* Sections */
+main {
+  width: 80vw;
 }
-.photo-3 {
-  border: 10px;
-  border-style: solid;
-  border-color: rgba(83, 74, 156, 0.5);
-  float: left;
+
+header {
+  background-color: rgba(var(--clr-dark), 1);
+  margin: 0;
+  padding: 40px;
 }
-.ex-image {
-  width: 25rem;
+
+nav {
+}
+
+footer {
+  background-color: rgba(var(--clr-dark), 1);
+  margin: 0;
+  padding: 40px;
 }
