@@ -1,6 +1,6 @@
 :root {
   --clr-dark: 26, 42, 104;
-  --clr-light: 203, 120, 73;
+  --clr-light: 136, 191, 224;
   --clr-highlight: 203, 120, 73;
 
   --fnt-title: "Merriwether", Georgia, "Times New Roman", Times, serif;
@@ -71,10 +71,6 @@ img {
 }
 
 /* Sections */
-main {
-  width: 80vw;
-}
-
 header {
   background-color: rgba(var(--clr-dark), 1);
   margin: 0;
@@ -82,6 +78,42 @@ header {
 }
 
 nav {
+}
+
+main {
+  width: 80vw;
+  /* margin-block: 6rem; */
+  margin-inline: auto;
+}
+
+section {
+  padding: 2rem;
+  margin-block: 6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  background-color: rgb(var(--clr-light));
+}
+
+.grid-image-right {
+  grid-column-start: 3;
+}
+
+.accent-image {
+  margin: auto;
+  width: 100%;
+  grid-row-start: 1;
+}
+
+.text-block {
+  margin-inline: auto;
+  align-self: center;
+  grid-column: span 2;
+  grid-row-start: 1;
+}
+
+p {
+  max-width: 60ch;
 }
 
 footer {
