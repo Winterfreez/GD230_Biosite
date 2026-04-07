@@ -25,6 +25,14 @@ h1 {
   padding: 0;
 }
 
+.subtitle {
+  display: block;
+  font-size: 1.563rem;
+  color: rgb(var(--clr-highlight));
+  padding-left: 3rem;
+  padding-top: 1rem;
+}
+
 h2 {
   font-family: var(--fnt-heading);
   font-size: 2.441rem;
@@ -49,6 +57,12 @@ p {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.33em;
+}
+
+em {
+  /* color: rgb(var(--clr-highlight)); */
+  font-weight: bolder;
+  font-style: normal;
 }
 
 .small {
@@ -96,6 +110,22 @@ section {
   background-color: rgb(var(--clr-light));
 }
 
+.cta-section {
+  grid-template-columns: .5fr 1fr .5fr;
+  background-color: #ffffff;
+}
+
+.cta-section h2 {
+  text-align: center;
+}
+
+.center-column {
+  grid-column-start: 2;
+    padding: 4rem;
+    background-color: rgb(var(--clr-light));
+
+}
+
 .grid-image-right {
   grid-column-start: 3;
 }
@@ -116,6 +146,60 @@ section {
 p {
   max-width: 60ch;
 }
+
+/* Forms */
+.form-block {
+  max-width: fit-content;
+  margin-inline: auto;
+  margin-top: 2rem;
+}
+
+form {
+  max-width: fit-content;
+}
+
+input {
+  display: block;
+  margin-bottom: .75rem;
+
+}
+
+label {
+  color: rgb(var(--clr-dark));
+  /* padding-top: 1.5rem; */
+}
+
+.button {
+  margin-inline: auto;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  color: rgb(var(--clr-highlight));
+  background-color: rgb(var(--clr-dark));
+  border: none;
+}
+
+/* Confirmation Modal */
+
+.confirm-modal {
+  width: 60ch;
+  padding: 2rem;
+  background-color: rgb(var(--clr-light));
+  border: none;
+}
+
+.confirm-modal::backdrop {
+  background-color: rgba(var(--clr-dark), .75);
+}
+
+.confirm-wrapper {
+  display: grid;
+  align-items: center;
+}
+
+.confirm-title {
+  text-align: center;
+}
+
 
 footer {
   background-color: rgba(var(--clr-dark), 1);
